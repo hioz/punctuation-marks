@@ -6,6 +6,9 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
+    <nav className="align-right">
+      <a className="link" href="https://github.com/hioz/punctuation-marks">Github</a>
+    </nav>
     <App />
   </React.StrictMode>,
   document.getElementById('root')

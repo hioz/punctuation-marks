@@ -5,9 +5,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color: #fcfaf2; 
+  font-size: calc(10px + 2vmin);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.align-right {
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: #bdc0ba;
+  font-size: 0.8em;
+}
+
+.link:visited {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+.link:active {
+  text-decoration: underline;
 }
