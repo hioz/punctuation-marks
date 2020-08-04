@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/punctuation-marks/static/css/main.2e7e9b96.chunk.css",
+    "main.js": "/punctuation-marks/static/js/main.83645983.chunk.js",
+    "main.js.map": "/punctuation-marks/static/js/main.83645983.chunk.js.map",
+    "runtime-main.js": "/punctuation-marks/static/js/runtime-main.f8d0d5e5.js",
+    "runtime-main.js.map": "/punctuation-marks/static/js/runtime-main.f8d0d5e5.js.map",
+    "static/js/2.f19805b9.chunk.js": "/punctuation-marks/static/js/2.f19805b9.chunk.js",
+    "static/js/2.f19805b9.chunk.js.map": "/punctuation-marks/static/js/2.f19805b9.chunk.js.map",
+    "index.html": "/punctuation-marks/index.html",
+    "precache-manifest.89ca003bf341e8e134919f99d0ce8dd8.js": "/punctuation-marks/precache-manifest.89ca003bf341e8e134919f99d0ce8dd8.js",
+    "service-worker.js": "/punctuation-marks/service-worker.js",
+    "static/css/main.2e7e9b96.chunk.css.map": "/punctuation-marks/static/css/main.2e7e9b96.chunk.css.map",
+    "static/js/2.f19805b9.chunk.js.LICENSE.txt": "/punctuation-marks/static/js/2.f19805b9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f8d0d5e5.js",
+    "static/js/2.f19805b9.chunk.js",
+    "static/css/main.2e7e9b96.chunk.css",
+    "static/js/main.83645983.chunk.js"
+  ]
+}
