@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import json from './data.json';
 
-type DataType = {[index: string]: string};
+type DataType = { [index: string]: string };
 
 const origData: DataType = json;
 
@@ -12,7 +12,7 @@ function App() {
 
   const handleKeyPress = (_e: React.KeyboardEvent<HTMLInputElement>) => {
     setSearch('');
-  }
+  };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
@@ -29,12 +29,16 @@ function App() {
     } else {
       setData(origData);
     }
-  }
+  };
 
   return (
     <div className="app">
       <header>
-        <Search value={search} onKeyPress={handleKeyPress} onChange={handleChange} />
+        <Search
+          value={search}
+          onKeyPress={handleKeyPress}
+          onChange={handleChange}
+        />
       </header>
       <main>
         <Content data={data} />
@@ -44,12 +48,12 @@ function App() {
 }
 
 type SearchProps = {
-  value: string,
-  onKeyPress: (e: React.KeyboardEvent<HTMLInputElement>) => void,
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
-}
+  value: string;
+  onKeyPress: (e: React.KeyboardEvent<HTMLInputElement>) => void;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+};
 
-function Search({value, onKeyPress, onChange}: SearchProps) {
+function Search({ value, onKeyPress, onChange }: SearchProps) {
   return (
     <input
       type="search"
@@ -65,18 +69,18 @@ function Search({value, onKeyPress, onChange}: SearchProps) {
 }
 
 type ContentProps = {
-  data: DataType
-}
+  data: DataType;
+};
 
-function Content({data}: ContentProps) {
+function Content({ data }: ContentProps) {
   return (
     <>
-      {Object.entries(data).map(([k, v]) =>
+      {Object.entries(data).map(([k, v]) => (
         <div key={k} className="line">
           {k && <span className="mark">{k}</span>}
           <span>{v}</span>
         </div>
-      )}
+      ))}
     </>
   );
 }

@@ -1,10 +1,10 @@
 import React from 'react';
-import {render, screen} from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from './App';
 import json from './data.json';
 
-type DataType = {[index: string]: string};
+type DataType = { [index: string]: string };
 
 const data: DataType = json;
 
@@ -31,6 +31,8 @@ describe('<App />', () => {
     expect(screen.getByText(/tilde/i)).toBeInTheDocument();
 
     userEvent.type(searchInput, 'a');
-    expect(screen.getByText(/It's not a punctuation mark/i)).toBeInTheDocument();
+    expect(
+      screen.getByText(/It's not a punctuation mark/i)
+    ).toBeInTheDocument();
   });
 });
