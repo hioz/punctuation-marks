@@ -8,7 +8,7 @@ type DataType = { [index: string]: string };
 
 const data: DataType = json;
 
-const escapePattern = /[-\/\\^$*+?.()|[\]{}]/g;
+const escapePattern = /[-/\\^$*+?.()|[\]{}]/g;
 
 function escapeRegex(str: string, pattern = escapePattern): string {
   return str.replace(pattern, '\\$&');
@@ -18,7 +18,7 @@ describe('<App />', () => {
   test('check all data', () => {
     render(<App />);
 
-    Object.entries(data).map(([_, v]) => {
+    Object.entries(data).forEach(([_, v]) => {
       expect(screen.getByText(new RegExp(escapeRegex(v)))).toBeInTheDocument();
     });
   });
