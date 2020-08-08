@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/punctuation-marks/precache-manifest.89ca003bf341e8e134919f99d0ce8dd8.js"
+  "/punctuation-marks/precache-manifest.048c434c761bf7bc9b4dd52aff6072cb.js"
 );
 
 self.addEventListener('message', (event) => {
