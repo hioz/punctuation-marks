@@ -17,6 +17,7 @@ main {
 .mark {
   display: inline-block;
   width: 20%;
+  min-width: 20%;
 }
 
 .search {
