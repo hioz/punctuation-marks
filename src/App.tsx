@@ -1,4 +1,9 @@
-import React, { useState } from 'react';
+import React, {
+  useState,
+  FC,
+  KeyboardEventHandler,
+  ChangeEventHandler,
+} from 'react';
 import './App.css';
 import json from './data.json';
 
@@ -10,11 +15,11 @@ function App() {
   const [search, setSearch] = useState('');
   const [data, setData] = useState(origData);
 
-  const handleKeyPress = (_e: React.KeyboardEvent<HTMLInputElement>) => {
+  const handleKeyPress: KeyboardEventHandler = () => {
     setSearch('');
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange: ChangeEventHandler<HTMLInputElement> = (e) => {
     const value = e.target.value;
     setSearch(value);
     if (value) {
@@ -38,10 +43,12 @@ function App() {
           value={search}
           onKeyPress={handleKeyPress}
           onChange={handleChange}
-        />
+        >
+          search
+        </Search>
       </header>
       <main>
-        <Content data={data} />
+        <Content {...data} />
       </main>
     </div>
   );
@@ -49,11 +56,11 @@ function App() {
 
 type SearchProps = {
   value: string;
-  onKeyPress: (e: React.KeyboardEvent<HTMLInputElement>) => void;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onKeyPress: KeyboardEventHandler;
+  onChange: ChangeEventHandler<HTMLInputElement>;
 };
 
-function Search({ value, onKeyPress, onChange }: SearchProps) {
+const Search: FC<SearchProps> = ({ value, onKeyPress, onChange, children }) => {
   return (
     <input
       type="search"
@@ -63,16 +70,12 @@ function Search({ value, onKeyPress, onChange }: SearchProps) {
       onChange={onChange}
       maxLength={1}
       autoFocus={true}
-      placeholder="search"
+      placeholder={children as string}
     />
   );
-}
-
-type ContentProps = {
-  data: DataType;
 };
 
-function Content({ data }: ContentProps) {
+const Content: FC<DataType> = (data) => {
   return (
     <>
       {Object.entries(data).map(([k, v]) => (
@@ -83,6 +86,6 @@ function Content({ data }: ContentProps) {
       ))}
     </>
   );
-}
+};
 
 export default App;
