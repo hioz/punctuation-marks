@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bf91296293cfb55aa34541f2a425ddf4",
+    "revision": "a6f50ecfcc77c5913c53d16481c9e7a2",
     "url": "/punctuation-marks/index.html"
   },
   {
-    "revision": "7ed557b2f3e0fc3526bd",
+    "revision": "92012342983e2d1a36ac",
     "url": "/punctuation-marks/static/css/main.6d95e424.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/punctuation-marks/static/js/2.f19805b9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7ed557b2f3e0fc3526bd",
-    "url": "/punctuation-marks/static/js/main.83645983.chunk.js"
+    "revision": "92012342983e2d1a36ac",
+    "url": "/punctuation-marks/static/js/main.111ff562.chunk.js"
   },
   {
     "revision": "832fe9bfd9cdd086827b",

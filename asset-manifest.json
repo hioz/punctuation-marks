@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/punctuation-marks/static/css/main.6d95e424.chunk.css",
-    "main.js": "/punctuation-marks/static/js/main.83645983.chunk.js",
-    "main.js.map": "/punctuation-marks/static/js/main.83645983.chunk.js.map",
+    "main.js": "/punctuation-marks/static/js/main.111ff562.chunk.js",
+    "main.js.map": "/punctuation-marks/static/js/main.111ff562.chunk.js.map",
     "runtime-main.js": "/punctuation-marks/static/js/runtime-main.f8d0d5e5.js",
     "runtime-main.js.map": "/punctuation-marks/static/js/runtime-main.f8d0d5e5.js.map",
     "static/js/2.f19805b9.chunk.js": "/punctuation-marks/static/js/2.f19805b9.chunk.js",
     "static/js/2.f19805b9.chunk.js.map": "/punctuation-marks/static/js/2.f19805b9.chunk.js.map",
     "index.html": "/punctuation-marks/index.html",
-    "precache-manifest.048c434c761bf7bc9b4dd52aff6072cb.js": "/punctuation-marks/precache-manifest.048c434c761bf7bc9b4dd52aff6072cb.js",
+    "precache-manifest.a0da7dd24b400132bba57ae0989ffb13.js": "/punctuation-marks/precache-manifest.a0da7dd24b400132bba57ae0989ffb13.js",
     "service-worker.js": "/punctuation-marks/service-worker.js",
     "static/css/main.6d95e424.chunk.css.map": "/punctuation-marks/static/css/main.6d95e424.chunk.css.map",
     "static/js/2.f19805b9.chunk.js.LICENSE.txt": "/punctuation-marks/static/js/2.f19805b9.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f8d0d5e5.js",
     "static/js/2.f19805b9.chunk.js",
     "static/css/main.6d95e424.chunk.css",
-    "static/js/main.83645983.chunk.js"
+    "static/js/main.111ff562.chunk.js"
   ]
 }
