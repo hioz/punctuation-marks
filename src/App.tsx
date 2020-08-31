@@ -23,7 +23,7 @@ function App() {
     const value = e.target.value;
     setSearch(value);
     if (value) {
-      const newData: DataType = {};
+      const newData: DataType = Object.create(null);
       const newText = origData[value];
       if (newText) {
         newData[value] = newText;
